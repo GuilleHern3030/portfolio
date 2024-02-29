@@ -11,16 +11,16 @@
 # Tecnologías
 Mi experiencia abarca un amplio espectro de tecnologías y lenguajes de programación, incluyendo pero no limitado a:
 
-Lenguajes: JavaScript, Python, Java
-Frameworks: React.js, Node.js
-Bases de datos: MySQL, PostgreSQL
-Herramientas de control de versiones: Git, GitHub
+* Lenguajes: JavaScript, Python, Java
+* Frameworks: React.js, Node.js
+* Bases de datos: MySQL, PostgreSQL
+* Herramientas de control de versiones: Git, GitHub
 
 # Contacto
 Si estás interesado en colaborar en un proyecto, contratarme o simplemente quieres charlar sobre desarrollo de software, ¡no dudes en contactarme!
 
-Correo electrónico: hernandezguillermo@gmail.com
-LinkedIn: proximamente..
-Sitio web: proximamente..
+* Correo electrónico: hernandezguillermo@gmail.com
+* LinkedIn: proximamente..
+* Sitio web: proximamente..
 
 ¡Gracias por visitar mi portafolio!
