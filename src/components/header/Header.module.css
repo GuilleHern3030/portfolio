@@ -1,0 +1,45 @@
+:root {
+    --header-line-padding: 0.21rem;
+    --header-background-color: #0e0e0e;
+    --header-line-color: rgb(238, 255, 1);
+    --header-text-color: white;
+    --header-padding-vertical: 1.4rem;
+    --header-title-size: 1.7rem;
+}
+
+@media only screen and (min-width: 360px) { :root { --header-title-size: 1.9rem; } }
+@media only screen and (min-width: 480px) { :root { --header-title-size: 2.3rem; } }
+@media only screen and (min-width: 720px) { :root { --header-title-size: 2.8rem; } }
+@media only screen and (min-width: 1024px) { :root { --header-title-size: 3.4rem; } }
+
+
+.title {
+    user-select: none;
+    font-size: var(--header-title-size);
+    text-align: center;
+}
+
+.title span {
+    margin-left: .6rem;
+    font-size: calc(var(--header-title-size) * .45);
+}
+
+.subtitle {
+    font-size: calc(var(--header-title-size) * .7);
+    text-align: center;
+    padding-bottom: calc(var(--header-line-padding) * 2.3);
+}
+
+.box {
+    background-color: var(--header-background-color);
+    color: var(--header-text-color);
+}
+
+.top {
+    padding: var(--header-line-padding);
+}
+
+.bottom {
+    padding: var(--header-line-padding);
+    background-color: var(--header-line-color);
+}

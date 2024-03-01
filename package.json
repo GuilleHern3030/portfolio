@@ -3,11 +3,14 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "homepage": "https://guillehern3030.github.io/portfolio",
   "scripts": {
     "dev": "vite",
+    "deploy": "gh-pages -d dist -r https://github.com/GuilleHern3030/portfolio.git",
     "build": "vite build",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "generate-bat": "echo @echo off > run_dev.bat && echo start \"\" \"http://localhost:5170\" > run_dev.bat && echo npm run dev -- --host --port 5170 >> run_dev.bat"
   },
   "dependencies": {
     "react": "^18.2.0",

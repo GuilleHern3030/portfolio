@@ -1,0 +1,103 @@
+body {
+    background: linear-gradient(to bottom, #fff, #d7d7d7, #b5b5b5, #222);
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    /* flex-basis: var(--mobile-section-min-height); */
+    flex-grow: 2;
+    flex-shrink: 0;
+    padding-bottom: 2.8rem;
+}
+
+ul {
+    list-style: none;
+}
+
+.info {
+    user-select: none;
+    padding: 0.7rem;
+    padding-right: 1.5rem;
+    font-size: 20px;
+    margin-top: 2.8rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: justify;
+    margin-bottom: 5rem;
+}
+
+
+.proyects {
+    margin: 2rem;
+    font-size: 22px;
+    background-color: #e8e8e8;
+    border-radius: 5%;
+    box-shadow: 5px 5px 15px 5px rgba(112,112,112,0.48);
+}
+
+.proyects > h4 {
+    text-align: center;
+    user-select: none;
+    font-size: 1.4em;
+    padding: .6em;
+    margin-bottom: 1rem;
+}
+
+.photo { 
+    width: 180px;
+    height: 180px; 
+}
+
+.proyects > div {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    padding-bottom: 1.5rem;
+    font-size: .7em;
+}
+
+
+@media only screen and (min-width: 360px) { 
+    .info article { font-size: 1.1em; } 
+    .info h3 { font-size: 1.3em; }
+    .proyects > div { font-size: .8em; }
+    .photo { width: 270px; height: 270px; }
+} 
+
+@media only screen and (min-width: 480px) { 
+    .info article { font-size: 1.2em; } 
+    .info h3 { font-size: 1.5em; }
+    .proyects > div { font-size: 1em; }
+} 
+
+@media only screen and (min-width: 720px) { 
+    .photo { width: 330px; height: 330px; }
+    .info article { font-size: 1.3em; } 
+    .info h3 { font-size: 1.6em; }
+    .info {
+        padding-left: 2rem;
+        padding-right: 2.8rem;
+    }
+    .proyects > div {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        justify-items: center;
+    }
+} 
+
+@media only screen and (min-width: 1024px) { 
+    .photo { width: 315px; height: 315px; }
+    .info { 
+        flex-direction: row;
+        font-size: 1.2em;
+        padding-left: 3rem;
+        padding-right: 4rem;
+    } 
+    .proyects > div {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
