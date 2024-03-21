@@ -1,5 +1,12 @@
+:root {
+    --text-color: #d1d1d1;
+    --background-color: #1d1d20;
+    --proyects-background: #d9d9d9;
+}
+
 body {
-    background: linear-gradient(to bottom, #fff, #d7d7d7, #b5b5b5, #222);
+    /* background: linear-gradient(to bottom, #fff, #d7d7d7, #b5b5b5, #222); */
+    background-color: var(--background-color)
 }
 
 main {
@@ -26,15 +33,15 @@ ul {
     align-items: center;
     text-align: justify;
     margin-bottom: 5rem;
+    color: var(--text-color)
 }
-
 
 .proyects {
     margin: 2rem;
     font-size: 22px;
-    background-color: #e8e8e8;
-    border-radius: 5%;
-    box-shadow: 5px 5px 15px 5px rgba(112,112,112,0.48);
+    background-color: var(--proyects-background);
+    border-radius: 5px;
+    box-shadow: 5px 5px 15px 5px rgba(112,112,112,0.28);
 }
 
 .proyects > h4 {
@@ -59,6 +66,9 @@ ul {
     font-size: .7em;
 }
 
+.proyect {
+    display: none
+}
 
 @media only screen and (min-width: 360px) { 
     .info article { font-size: 1.1em; } 
@@ -74,7 +84,7 @@ ul {
 } 
 
 @media only screen and (min-width: 720px) { 
-    .photo { width: 330px; height: 330px; }
+    .photo { width: 310px; height: 310px; }
     .info article { font-size: 1.3em; } 
     .info h3 { font-size: 1.6em; }
     .info {
@@ -90,7 +100,8 @@ ul {
 } 
 
 @media only screen and (min-width: 1024px) { 
-    .photo { width: 315px; height: 315px; }
+    .info_paragraph { margin-right: 2em; }
+    .photo { width: 285px; height: 285px; } 
     .info { 
         flex-direction: row;
         font-size: 1.2em;

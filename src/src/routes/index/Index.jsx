@@ -24,7 +24,7 @@ export default () => {
         <main>
 
             <section className={style.info}>
-                <article>
+                <article className={style.info_paragraph}>
                     <h3> { strings("greeting") } </h3>
                     <br/>
                     <p> { strings("paragraph1") } </p>
@@ -44,6 +44,10 @@ export default () => {
                     <Elink href="https://guillehern3030.github.io/cryptography/" text= { strings("proyect3") } />
                 </div>
                 {/* <div class="pages__see-more"><h4>Ver más</h4></div> */}
+            </section>
+
+            <section className={style.proyect}>
+                <p className={style.proyect_name}>Proyect example</p>
             </section>
 
         </main>

@@ -1,6 +1,12 @@
+const getLanguage = () => {
+    const lang = navigator.language || navigator.userLanguage;
+    const separator = lang.indexOf("-");
+    return separator == -1 ? lang : lang.substring(0, separator);
+}
+
 export default (content) => {
 
-    const language = navigator.language || navigator.userLanguage;
+    const language = sessionStorage.getItem("language") || getLanguage();
 
     switch (content) {
 
