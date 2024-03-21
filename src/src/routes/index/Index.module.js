@@ -1,12 +1,14 @@
-const getLanguage = () => {
-    const lang = navigator.language || navigator.userLanguage;
+export const getLanguage = () => {
+    const lang = sessionStorage.getItem("language") || navigator.language || navigator.userLanguage;
     const separator = lang.indexOf("-");
     return separator == -1 ? lang : lang.substring(0, separator);
 }
 
-export default (content) => {
+export const setLanguage = lang => sessionStorage.setItem("language", lang)
 
-    const language = sessionStorage.getItem("language") || getLanguage();
+export default (content, lang) => {
+
+    const language = lang || getLanguage();
 
     switch (content) {
 
@@ -25,20 +27,35 @@ export default (content) => {
                 : "Throughout my studies I have demonstrated a constant commitment to my training, which is why I can adapt to different work environments with various technologies quickly."
 
         case "proyects-title":
-            return language == "es" ? "Proyectos de muestra"
-                : "Proyects example"
+            return language == "es" ? "Proyectos"
+                : "Proyects"
                 
-        case "proyect1":
+        case "proyect0":
             return language == "es" ? "Menú de restaurante"
                 : "Restaurant menu"
                 
-        case "proyect2":
+        case "proyect1":
             return language == "es" ? "Organizador de horarios"
                 : "Hour organizator"
                 
-        case "proyect3":
+        case "proyect2":
             return language == "es" ? "Encriptador de texto"
                 : "Text encryptor"
+                
+        case "proyect0_description":
+            return language == "es" ? 
+                "Página de muestra para el uso de un restaurante. Puede adaptarse a otro tipo de páginas que muestren productos."
+                : "Sample page for restaurant use. It can be adapted to other types of pages that show products."
+                
+        case "proyect1_description":
+            return language == "es" ? 
+                "Permite visualizar los horarios de la semana según las tareas que tengas."
+                : "Allows you to view the week's schedules according to the tasks you have."
+                
+        case "proyect2_description":
+            return language == "es" ? 
+                "Permite encriptar o esconder un texto por medio de una contraseña."
+                : "It allows you to encrypt or hide text using a password."
 
         default: return "";
     }

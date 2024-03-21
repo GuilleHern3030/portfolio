@@ -9,6 +9,8 @@
     border: #222 solid 1px;
     color:blue;
     border-radius: 50%;
+    user-select: none;
+    cursor: pointer;
 }
 
 .textlink:hover {
@@ -20,6 +22,8 @@
     height: 50px; */
     transition: transform 0.15s;
     margin: 6px;
+    cursor: pointer;
+    user-select: none;
 }
 
 .imglink:hover {
