@@ -1,7 +1,10 @@
-import style from './Index.module.css'
-import links from './Index.module.json'
-import strings, { getLanguage, setLanguage as setSessionLanguage } from './Index.module.js'
+import { useContext } from 'react'
 
+import style from './Index.module.css'
+import strings from './Index.module.js'
+
+
+import { LanguageContext } from '../../context/Language'
 import englishFlag from '../../assets/images/english-flag.webp'
 import spanishFlag from '../../assets/images/spanish-flag.webp'
 
@@ -12,26 +15,19 @@ import instagram from '../../assets/images/instagram-icon.webp'
 import discord from '../../assets/images/discord-icon.webp'
 import threads from '../../assets/images/threads-icon.webp'
 import twitter from '../../assets/images/twitter-icon.webp'
-import github from '../../assets/images/github-icon.png'
-import webicon from '../../assets/images/web-icon.png'
+
+import proyects from '../../assets/data/links.json'
 
 // Components
 import Header from "../../components/header/Header"
 import Footer from '../../components/footer/Footer'
 import Photo from '../../components/photo/Photo'
 import Elink from '../../components/elink/Elink'
-import { useEffect, useState, useRef } from 'react'
+import Proyects from '../../components/proyects/Proyects'
 
 export default () => {
 
-    const [ language, setLanguage ] = useState(getLanguage())
-    const [ pageSelected, setPageSelected ] = useState()
-
-    useEffect(() => { setSessionLanguage(language) }, [language])
-
-    const handlePageSelection = pageIndex => {
-        // setPageSelected(pageSelected === pageIndex ? null : pageIndex)
-    }
+    const language = useContext(LanguageContext)
 
     return <>
 
@@ -41,30 +37,26 @@ export default () => {
 
             <section className={style.flags}>
                 <div>
-                    <img id="es" src={spanishFlag} className={language === "es" ? style.flag_active : style.flag} onClick={e => setLanguage(e.target.id)}/>
-                    <img id="en" src={englishFlag} className={language === "en" ? style.flag_active : style.flag} onClick={e => setLanguage(e.target.id)}/>
+                    <img id="es" src={spanishFlag} className={language.get() === "es" ? style.flag_active : style.flag} onClick={e => language.set(e.target.id)}/>
+                    <img id="en" src={englishFlag} className={language.get() === "en" ? style.flag_active : style.flag} onClick={e => language.set(e.target.id)}/>
                 </div>
             </section>
 
             <section className={style.info}>
                 <article className={style.info_paragraph}>
-                    <h3> { strings("greeting", language) } </h3>
+                    <h3> { strings("greeting", language.get()) } </h3>
                     <br/>
-                    <p> { strings("paragraph1", language) } </p>
+                    <p> { strings("paragraph1", language.get()) } </p>
                     <br/>
-                    <p> { strings("paragraph2", language) } </p>
+                    <p> { strings("paragraph2", language.get()) } </p>
                 </article>
                 <article className={style.photo}>
                     <Photo img={myPhoto}/>
                 </article>
             </section>
 
-            <section className={style.proyects}>
-                <h4> { strings("proyects-title", language) } </h4>
-                <div>
-                    { links.map((link, index) => <Elink key={index} id={`proyect${index}`} href={link.page} onClick={() => handlePageSelection(index)} text= { strings(`proyect${index}`, language) } />) }
-                </div>
-                {/* <div class="pages__see-more"><h4>Ver más</h4></div> */}
+            <section>
+                <Proyects proyects={proyects} language={language.get()}/>
             </section>
 
         </main>

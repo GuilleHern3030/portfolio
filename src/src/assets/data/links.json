@@ -1,0 +1,26 @@
+[
+    {
+        "title-es": "Menú de restaurante",
+        "title-en": "Restaurant menu",
+        "description-es": "Página de muestra para el uso de un restaurante. Puede adaptarse a otro tipo de páginas que muestren productos.",
+        "description-en": "Sample page for restaurant use. It can be adapted to other types of pages that show products.",
+        "page": "https://guillehern3030.github.io/pizzaapp/",
+        "github": "https://github.com/GuilleHern3030/pizzaapp"
+    },
+    {
+        "title-es": "Organizador de horarios",
+        "title-en": "Hour organizator",
+        "description-es": "Permite visualizar los horarios de la semana según las tareas que tengas.",
+        "description-en": "Allows you to view the week's schedules according to the tasks you have.",
+        "page": "https://guillehern3030.github.io/hour-organizator/",
+        "github": "https://github.com/GuilleHern3030/hour-organizator"
+    },
+    {
+        "title-es": "Encriptador de texto",
+        "title-en": "Text encryptor",
+        "description-es": "Permite encriptar o esconder un texto por medio de una contraseña.",
+        "description-en": "It allows you to encrypt or hide text using a password.",
+        "page": "https://guillehern3030.github.io/cryptography/",
+        "github": "https://github.com/GuilleHern3030/cryptography"
+    }
+]
