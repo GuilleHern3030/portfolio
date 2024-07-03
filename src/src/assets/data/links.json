@@ -8,6 +8,14 @@
         "github": "https://github.com/GuilleHern3030/pizzaapp"
     },
     {
+        "title-es": "Página web de servicios",
+        "title-en": "Services web page",
+        "description-es": "Una muestra de una página donde se ofrece un servicio, en este caso, los servicios de un electricista.",
+        "description-en": "A sample of a page where a service is offered, in this case, the services of an electrician.",
+        "page": "https://guillehern3030.github.io/electriguillen/",
+        "github": "https://github.com/GuilleHern3030/electriguillen"
+    },
+    {
         "title-es": "Organizador de horarios",
         "title-en": "Hour organizator",
         "description-es": "Permite visualizar los horarios de la semana según las tareas que tengas.",
