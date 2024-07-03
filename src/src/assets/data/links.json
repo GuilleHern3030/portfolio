@@ -22,5 +22,13 @@
         "description-en": "It allows you to encrypt or hide text using a password.",
         "page": "https://guillehern3030.github.io/cryptography/",
         "github": "https://github.com/GuilleHern3030/cryptography"
+    },
+    {
+        "title-es": "Organizador de gastos",
+        "title-en": "Expenses organizator",
+        "description-es": "Permite crear un pequeño presupuesto de gastos.",
+        "description-en": "It allows you to create a small expense budget.",
+        "page": "https://guillehern3030.github.io/expenses/",
+        "github": "https://github.com/GuilleHern3030/expenses"
     }
 ]
