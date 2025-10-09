@@ -4,6 +4,8 @@ import { useState, useRef, useEffect } from "react"
 
 import github from '../../assets/images/github-icon.png'
 import webicon from '../../assets/images/web-icon.png'
+import googleplayicon from '../../assets/images/googleplay.png'
+import appstoreicon from '../../assets/images/appstore.png'
 
 import Elink from "../elink/Elink"
 
@@ -33,7 +35,7 @@ const getAnimation = step => {
     }
 }
 
-export default ( { proyects, language = "en" } ) => {
+export default ( { proyects, language = "en", googleplay=undefined, appstore=undefined, moreProyects=false } ) => {
 
     const [ proyectSelected, setProyectSelected ] = useState()
     const [ animation, setAnimation ] = useState()
@@ -68,8 +70,12 @@ export default ( { proyects, language = "en" } ) => {
     
         <div ref={proyectsContainer} className={styles.proyects}>
             <h4> { getProyectsTitle(language) } </h4>
-            <div> 
+            <div className={styles.proyectlist}> 
                 { proyects.map((proyect, index) => <Elink key={index} id={`proyect${index}`} /*href={link.page}*/ onClick={() => handlePageSelection(index)} text= { getTitle(proyect, language) } />) }
+            </div>
+            <div className={styles.appslist}>
+                { googleplay ? <Elink href={googleplay} img={googleplayicon} /> : <></> }
+                { appstore ? <Elink href={appstore} img={appstoreicon} /> : <></> }
             </div>
         </div>
 

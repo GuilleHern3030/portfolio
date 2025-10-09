@@ -15,6 +15,7 @@ import instagram from '../../assets/images/instagram-icon.webp'
 import discord from '../../assets/images/discord-icon.webp'
 import threads from '../../assets/images/threads-icon.webp'
 import twitter from '../../assets/images/twitter-icon.webp'
+import gmail from '../../assets/images/gmail-icon.webp'
 
 import proyects from '../../assets/data/links.json'
 
@@ -56,12 +57,17 @@ export default () => {
             </section>
 
             <section>
-                <Proyects proyects={proyects} language={language.get()}/>
+                <Proyects 
+                    proyects={proyects} 
+                    googleplay={"https://android.guillenh.com/"}
+                    moreProyects={true}
+                    language={language.get()}
+                />
             </section>
 
         </main>
 
-        <Footer credits="©2023 Guillermo Hernandez">
+        <Footer email="hernandezguillermo1995@gmail.com" emailicon={gmail} credits="©2023 Guillermo Hernandez">
             <Elink href="https://www.facebook.com/profile.php?id=100077720357579" img={facebook} text="Facebook"/>
             <Elink href="https://www.instagram.com/guille.hern/" img={instagram} text="Instragram"/>
             <Elink href="https://www.threads.net/guille.hern/" img={threads} text="Threads"/>

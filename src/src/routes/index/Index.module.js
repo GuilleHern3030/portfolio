@@ -18,8 +18,8 @@ export default (content, lang) => {
 
         case "paragraph1":
             return language == "es" ?
-                "Mi nombre es Guillermo, estudiante de Análisis de Sistemas, altamente motivado y dedicado por la programación y testing QA, aprendiendo cada día más las mejores heurísticas de este campo para realizar código limpio y escalable para cualquier tipo de proyecto."
-                : "My name is Guillermo, a Systems Analysis student, highly motivated and dedicated to programming and testing, learning more and more the best heuristics in this field every day to create clean and scalable code for any type of project."
+                "Mi nombre es Guillermo, estudiante de informática, altamente motivado y dedicado por la programación, aprendiendo cada día más las mejores heurísticas de este campo para realizar código limpio y escalable para cualquier tipo de proyecto."
+                : "My name is Guillermo, a computer science student, highly motivated and dedicated to programming, learning more and more the best heuristics in this field every day to create clean and scalable code for any type of project."
     
         case "paragraph2":
             return language == "es" ?

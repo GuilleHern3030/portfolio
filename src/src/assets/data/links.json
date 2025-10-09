@@ -8,12 +8,28 @@
         "github": "https://github.com/GuilleHern3030/pizzaapp"
     },
     {
-        "title-es": "Página web de servicios",
-        "title-en": "Services web page",
+        "title-es": "Landingpage",
+        "title-en": "Landingpage",
         "description-es": "Una muestra de una página donde se ofrece un servicio, en este caso, los servicios de un electricista.",
         "description-en": "A sample of a page where a service is offered, in this case, the services of an electrician.",
         "page": "https://guillehern3030.github.io/electriguillen/",
         "github": "https://github.com/GuilleHern3030/electriguillen"
+    },
+    {
+        "title-es": "Emprendimiento de ventas",
+        "title-en": "Sales Entrepreneurship",
+        "description-es": "Página que recolecta información de una Tabla de Google Sheets y la muestra a sus clientes. Brinda una información actualizada constante.",
+        "description-en": "A page that collects information from a Google Sheets table and displays it to your clients. It provides constantly updated information.",
+        "page": "https://cenit.guillenh.com/",
+        "github": "https://github.com/GuilleHern3030/cenitespecias"
+    },
+    {
+        "title-es": "Tienda de ropa",
+        "title-en": "Sales Entrepreneurship",
+        "description-es": "Página de un emprendimiento familiar dedicado a la venta de ropa.",
+        "description-en": "Website of a family business dedicated to the sale of clothing.",
+        "page": "https://ingenioindumentaria.pages.dev/",
+        "github": "https://github.com/GuilleHern3030/ingenioindumentaria"
     },
     {
         "title-es": "Organizador de horarios",
